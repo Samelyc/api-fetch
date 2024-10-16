@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Fetch</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Usuarios</h1>
+    <button id="load-users" class="load-btn">Leer usuarios</button>
+
+    
+    
+    <div id="spinner" class="d-flex align-items-center hidden">
+      <strong role="status">Loading...</strong>
+      <div class="spinner-border ms-auto" aria-hidden="true"></div>
+  </div>
+
+    <table id="users-table" class="users-table hidden">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>e-mail</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody id="users">
+        
+      </tbody>
+    </table>
+
+    <div class="pagination">
+      <button id="prev" class="page-btn" disabled>&lt; Prev</button>
+      <span id="page-info">Página 1</span>
+      <button id="next" class="page-btn">Next &gt;</button>
+    </div>
+  </div>
+<script src="script.js"></script> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</body>
+</html>
